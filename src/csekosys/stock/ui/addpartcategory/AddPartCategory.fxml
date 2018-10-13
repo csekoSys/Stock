@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="newPartCategoryPane" prefHeight="400.0" prefWidth="350.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csekosys.stock.ui.addpartcategory.AddPartCategoryController">
+    <stylesheets>
+        <URL value="@addpartcategory.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="175.0" layoutY="34.0" prefHeight="434.0" prefWidth="525.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Új alkatrész kategória">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="name" labelFloat="true" promptText="Neve">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="47.0" prefWidth="350.0">
+               <VBox.margin>
+                  <Insets top="260.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton onAction="#addPartCategory" prefHeight="50.0" prefWidth="250.0" stylesheets="@../addPart/addPart.css" text="Mentés" />
+                  <JFXButton onAction="#cancel" prefHeight="50.0" prefWidth="250.0" stylesheets="@../addPart/addPart.css" text="Mégse" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

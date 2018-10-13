@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="cashregisersListPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csekosys.stock.ui.cashregisterslist.CashregistersListController">
+    <stylesheets>
+        <URL value="@cashregisterslist.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="cashregisersListTableView" layoutX="123.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="idCol" maxWidth="202.0" minWidth="20.0" prefWidth="63.0" text="#" />
+          <TableColumn fx:id="licenseNumberCol" prefWidth="251.0" text="Engedélyszám" />
+            <TableColumn fx:id="nameCol" prefWidth="75.0" text="Név" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>
